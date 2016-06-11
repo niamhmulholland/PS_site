@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Node Sample App</title>
+    <head>
+         <link rel="stylesheet" href="css/stylesheet.css" />
+          <script src="parallax/js/vendor/modernizr-2.7.1.min.js"></script>
 
-    <!-- CSS -->
-    <!-- load bootstrap and our own personal stylesheet -->
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+         <!-- fonts -->
+         <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
 
-</head>
-<body>
+         <!-- scripts for jQuery and jQuery UI -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+         
+         <!-- Skrollr.js for parallax scrolling \o/ -->
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+         <script src="js/skrollr.js"></script>
+         <script src="js/_main.js"></script>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>This Is Heroku Awesome!</h1>
-        <p>This is the sample of a tutorial on <a href="https://scotch.io">scotch.io</a></p>
-        <a href="https://scotch.io/tutorials/" class="btn btn-primary btn-lg">View the Tutorial</a>
-    </div>
+         <script>
+         $(document).ready(function() {
+            $(".vertical-line").hide();
+            $(".horizontal-line").hide();
+            $(".vertical-line").slideDown(1600);
+            $(".horizontal-line").effect("slide", {direction: "left", mode: "show"}, 1600 );
+            $(".box").click(function() {
+                $(".box").hide();
+                $(".vertical-line").hide();
+                $(".horizontal-line").hide();
+            })
+         });
+         </script>
+         <script>
+          $(function() {
+             $('.gif').imageloader();
+         });
+          </script>
+    </head>
+
+<div class="section">
+        <div id="container">
+            <div class="nav-bar1">
+                <div class="top-row"> 
+                    <div class="nav-icon">
+                        <h1>NM</h1>
+                    </div>
+                    <div class="box">
+                        <h2> Niamh Mulholland </h2>
+                    </div>
+                </div>
+                <div class="middle-row-1">
+                    <div class="box"><a href="#linktoabout"> About </a></div>
+                    <div class="box"><a> Resum&eacute; </a></div>
+                    <div class="box"><a> Contact </a></div>
+                </div>
+                <div class="middle-row-2"> 
+                    <div class="box"><a> Web Design Portfolio </a></div>
+                    <div class="box"><a> Art </a></div>
+                </div>
+                <div class="bottom-row"> 
+                    <div class="box"><a>Other Projects</a></div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="gif"><img src="johnhavard800.gif" alt="John Harvard Line Animation"></div>
+        </div>
 </div>
-    
-</body>
+
+        <footer id="footer">
+            <p> created by niamh mulholland &copy; 2016 </p>
+        </footer>
+
 </html>
