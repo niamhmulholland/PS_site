@@ -69,7 +69,7 @@ svg .text:hover {
 	
 }
 
-.container p {
+.container p, a {
 	
 	color: black;
 	font-family: 'Jura';
@@ -80,11 +80,6 @@ svg .text:hover {
 	padding: 55px;
 }
 
-#contact p {
-	background-color: white;
-	color: black;
-	text-align: center;
-}
 
 section {
 	padding-bottom: 0;
@@ -94,6 +89,32 @@ section {
 #about {
 	padding-bottom: 100px;
 
+}
+
+#about a {
+	color: black;
+
+}
+
+#about .redirect {
+	opacity: 0.5;
+}
+
+#about a:hover {
+	opacity: 1;
+	color: black;
+}
+
+
+#contact p {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+#contact a {
+	color: #337ab7;
+	
 }
 
 footer .text-muted {
