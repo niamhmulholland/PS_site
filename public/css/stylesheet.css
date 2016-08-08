@@ -1,7 +1,187 @@
+
+main {
+	height: 100%;
+}
+
+/* main div layout styling */
+
+.full-page-inner {
+	padding-width: 10px;
+	height: 100%;
+	width: 100%;
+	border: 10px solid #B8E5F5;
+	background-color: white;
+	position: fixed;
+}
+ 
+.header, .menu {
+	 margin: 0 auto;
+     max-width: 700px; 
+     padding: 15px;
+}
+
+.container {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	float: left;
+	position: absolute;
+
+}
+
+.first-item, .second-item, .third-item {
+	padding: 250px;
+}
+.third-item {
+	padding-bottom: 350px;
+	text-align: left;
+}
+
+.second-item {
+	font-size: 20px;
+}
+
+.second-item a:hover{
+	opacity: 0.5;
+}
+
+/* font, colour, size styling */
+.title, .menu { 
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Jura';
+	opacity: 0.4;
+}
+
+.menu {
+	width: 100%;
+	font-size: 18px;
+	opacity: 1.0;
+	font-weight: bold;
+	display: inline-block;	
+}
+
+.container a { 
+	text-decoration: none;
+
+}
+
+.content {
+	color: black;
+	padding: 50px;
+	float: right;
+	top: 100;
+	position: fixed;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+        linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(-90deg, transparent 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
+        linear-gradient(transparent 1px, transparent 1px), transparent;
+    background-size:
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px,
+        10px 10px;
+}
+
+.third-item .content {
+	position: absolute;
+	padding-right: 50px;
+	right: 50px;
+	}
+
+/* circle stying and animation */
+
+.circle-outer {
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top: 240px; 
+	border-radius: 50%;
+	background-color: black;
+	z-index: 0;
+}
+
+.circle-inner {
+	width: 25px;
+	height: 40px;
+	position: absolute;
+	top: 5px; 
+	z-index: 99;
+	background-color: white;
+	border-radius: 60%;
+}
+
+.tiny-circle {
+	width: 22px;
+	height: 35px;
+	background: black;
+	position: absolute;
+	top: 6.5px;
+	z-index: 1000;
+	border-radius: 70%
+	}
+
+.tinier-circle {
+	width: 18px;
+	height: 31px;
+	background: white;
+	z-index: 1001;
+	position: absolute;
+	top: 8.5px;
+	border-radius: 70%;
+}
+.block {
+	width: 15px;
+	height: 50px;
+	top: -20px;
+	background: white;
+}
+.block-2 {
+	width: 10px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	top: -10px;
+
+} 
+
+
+/* nav-icon styling */
+.nav-icon {
+	background-color: black;
+	height: 45px;
+	width: 55px;
+	margin: 0;
+	display: block;
+	position: fixed;
+	text-align: center;
+	float: left;
+	z-index: 999;
+}
+.nav-icon h1 {
+	color: white;
+	font-size: 20px;
+	margin-top: 5px;
+	font-family: 'Jura';
+    font-size: 35px;
+}
+
+
+
+
+/*
 a:hover {
 	text-decoration: none;
 }
-/* nav-bar styling */
 svg .circle {
 	fill: white;
 	stroke: black;
@@ -13,17 +193,6 @@ svg .header-text {
 	font-family: 'Jura';
 	font-size: 30px;
 	fill: #337ab7;
-}
-svg .text {
-	font-family: 'Jura';
-	font-size: 20px;
-	opacity: 0.5;
-}
-
-svg .text:hover {
-	font-family: 'Jura';
-	font-size: 20px;
-	opacity: 1;
 }
 
 .nav-icon {
@@ -42,6 +211,7 @@ svg .text:hover {
 	font-size: 20px;
 	margin-top: 5px;
 	font-family: 'Jura';
+    font-size: 35px;
 }
 
 
@@ -50,7 +220,23 @@ svg .text:hover {
 	float: left;
 }
 
-/* first section */
+.nav-bar a {
+	font-size: 20px;
+	padding: 40px;
+}
+
+.nav-icon ul {
+	font-family: 'Jura';
+	font-size: 20px;
+	opacity: 0.5;
+}
+.nav-icon ul:hover {
+	font-family: 'Jura';
+	font-size: 20px;
+	opacity: 1;
+}
+
+ !!!first section 
 
 .main {
 	padding-top: 0px;
@@ -59,7 +245,7 @@ svg .text:hover {
 	height: 80vh;
 }
 
-/* second section */
+ !!!second section 
 
 .container .section-heading {
 	font-family: 'Jura';
@@ -115,7 +301,7 @@ section {
 #contact a {
 	color: #337ab7;
 	
-}
+} 
 
 footer .text-muted {
 	font-size: 13px;
@@ -129,7 +315,31 @@ footer hr {
   	 max-width: 1000px;
 }
 
+!!!projects page 
 
+.sub-page .section-heading {
+	font-size: 130px;
+	float: left;
+	position: absolute;
+	z-index: 999;
+	opacity: 0.3;
+}
+
+.project-block {
+	
+	padding: 5px;
+	color: black;
+	float: center;
+	position: center;
+	width: 30%;
+}
+
+.container {
+	padding: 5px;
+	font-family: 'Jura';
+	font-size: 20px;
+	background-color: #C9D3D6;
+}*/
 
 
 

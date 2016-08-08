@@ -1,111 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<body>
 
-<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- php -->
 
-    <title>Niamh Mulholland</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+<!-- jQuery -->
+<script>
+    $(document).ready(function(){
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+     $(document).scroll(function(){
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        var y = $(this).scrollTop();
+        if (y > 200) {
+            $(".first-item").css("opacity", "0");
+            $(".first-svg").attr("opacity", "1.0");
+        }
+        else {
+            $(".first-item").css("opacity", "1");
+            $(".first-svg").attr("opacity", "0.5");
+        }
+        if (y > 250 && y < 600) {
+            $(".second-item").css("opacity", "1");
+            $(".second-svg").attr("opacity", "0.5");
+        } 
+        else {
+            $(".second-item").css("opacity", "0");
+            $(".second-svg").attr("opacity", "1.0");
+        }
+        if (y > 650 && y < 1200) {
+            $(".third-item").css("opacity", "1");
+            $(".third-svg").attr("opacity", "0.5");
+        }
+        else {
+            $(".third-item").css("opacity", "0");
+            $(".third-svg").attr("opacity", "1.0");
+        }
+        })
+     })
+</script>
 
-</head>
 
-<body id="page-top">
-    <section class="main">
-        <div class="nav-bar">
-        <div class="nav-design">
-          <svg height="230" width="1300">
-            <line x1="0" y1="20" x2="100" y2="20" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="370" y1="20" x2="1100" y2="20" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="20" y1="20" x2="20" y2="225" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="20" y1="75" x2="80" y2="75" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="20" y1="125" x2="80" y2="125" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="20" y1="175" x2="80" y2="175" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <line x1="20" y1="225" x2="80" y2="225" style="stroke:rgb(0,0,0);stroke-width:2" />
-            <circle class="circle" cx="100" cy="20"/>
-            <circle class="circle"cx="80" cy="75"/>
-            <circle class="circle"cx="80" cy="125"/>
-            <circle class="circle"cx="80" cy="175"/>
-            <circle class="circle"cx="80" cy="225"/>
-
-            <text class="header-text" x="120" y="30"> Niamh Mulholland</text>
-            <text class= "text" x="100" y="80"> <a href="#about">About</a></text>
-            <text class= "text" x="100" y="130"><a href="/resume">R&eacute;sum&eacute;</a></text>
-            <text class= "text" x="100" y="180"><a href="/projects">Projects</a></text>
-            <text class= "text" x="100" y="230"><a href="#contact">Contact</a></text>
-          </svg>
+    <div class="full-page-inner">
+        <div class="header">
+            <div class="title">Niamh Mulholland</div>
         </div>
-        </div>
-    </section>
 
-   <a name="about"><section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">About</h2>
-                        <hr class="primary">
-                        <p>Sophomore at Harvard University. Studying Computer Science. Likes building stuffs. Member of the Harvard Undergraduate Robotics Club. Web designer at The Harvard Crimson. You can check out my completed and ongoing projects<a href='/projects' class='redirect'>here</a>. I sometimes take commissions, web design and graphics of any sort. If interested please contact me<a href='#contact' class='redirect'>here</a>. Also super interested in languages. I speak broken irish, intermediate korean and intermediate spanish.</p>
-                </div>
-            </div>
-        </div>
-    </section></a>
+        <!-- svg elements -->
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading"><a name="contact">Contact</a></h2>
-                    <hr class="primary">
-                    <p>Shoot me an email.</p>
-                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <br>
-                    <br>
-                    <p>Personal email: <a href="mailto:niamhmulholland@college.harvard.edu">niamhmulholland@college.harvard.edu</a></p>
-                    <p> Harvard Crimson, work email: <a href="mailto:niamh.mulholland@thecrimson.com">niamh.mulholland@thecrimson.com</a></p>
-                </div>  
-            </div>
-        </div>
-    </section>
+        <svg width="500" height="500">
+            <line class="first-svg" x1="25" y1="170" x2="35" y2="160" style="stroke:rgb(0,0,0);stroke-width:2"/>
+            <line class="second-svg" x1="40" y1="200" x2="55" y2="200" style="stroke:rgb(0,0,0);stroke-width:2"/>
+            <line class="third-svg"x1="25" y1="230" x2="35" y2="240" style="stroke:rgb(0,0,0);stroke-width:2"/>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+            <a href="#first-link"><text class="first-svg" x="40" y="160" font-family="Jura" fill="black" font-size="12">0.1 ABOUT</text></a>
+            <text class="second-svg" x="60" y="203" font-family="Jura" fill="black" font-size="12">0.2 PORTFOLIO</text>
+            <text class="third-svg" x="40" y="245" font-family="Jura" fill="black" font-size="12">0.3 CONTACT</text>
+        </svg> 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+       
+        
+        <div class="circle-outer"><div class="tiny-circle"></div><div class="tinier-circle"><div class="block-2"></div></div><div class="circle-inner"></div><div class="block"></div></div>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
 
+    </div>
+
+<div class="container">
+    <div class="menu">
+        <a name="first-link">
+        <div class="first-item">0.1 ABOUT
+        <div class="content"><p class="first-item-info">Computer Science Undergraduate @ Harvard University</p></div>
+</a></div>
+        <div class="second-item">0.2 PORTFOLIO
+        <br> --> </div>
+        <div class="third-item">0.3 CONTACT
+        <div class="content">
+        
+        <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="post">
+        <span class="error">* required field.</span><br><br>
+        Name: <input type="text" name="name">
+         <span class="error">* <?php echo $nameErr;?></span>
+         <br><br>
+        E-mail: <input type="text" name="email">
+         <span class="error">* <?php echo $emailErr;?></span><br><br>
+        Message: <textarea name="message" rows="5" cols="40"></textarea>
+         <span class="error">* <?php echo $messageErr;?></span><br><br>
+        <input type="submit"></form></div></div>
+
+    </div>
+
+</div>
+    
 </body>
-
 </html>
