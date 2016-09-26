@@ -1,101 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-
-<!-- php -->
+<head> 
 
 
+</head>
+    <body>
+   <div class="upper-box">
+    <div class="title">Niamh Mulholland</div>
+    <div class="about">Harvard University 2019. S.B. Electrical Engineering. Computer Science Minor.</div>
+    </div> 
 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-<!-- jQuery -->
-<script>
-    $(document).ready(function(){
-
-     $(document).scroll(function(){
-
-        var y = $(this).scrollTop();
-        if (y > 200) {
-            $(".first-item").css("opacity", "0");
-            $(".first-svg").attr("opacity", "1.0");
-        }
-        else {
-            $(".first-item").css("opacity", "1");
-            $(".first-svg").attr("opacity", "0.5");
-        }
-        if (y > 250 && y < 600) {
-            $(".second-item").css("opacity", "1");
-            $(".second-svg").attr("opacity", "0.5");
-        } 
-        else {
-            $(".second-item").css("opacity", "0");
-            $(".second-svg").attr("opacity", "1.0");
-        }
-        if (y > 650 && y < 1200) {
-            $(".third-item").css("opacity", "1");
-            $(".third-svg").attr("opacity", "0.5");
-        }
-        else {
-            $(".third-item").css("opacity", "0");
-            $(".third-svg").attr("opacity", "1.0");
-        }
-        })
-     })
-</script>
-
-
-    <div class="full-page-inner">
-        <div class="header">
-            <div class="title">Niamh Mulholland</div>
+  <!-- Wrapper for slides -->
+<div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(css/samplephoto1.jpg);"></div>
+                <div class="carousel-caption">
+                    <h2>WEB DESIGN</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>APPS</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>OTHER STUFF</h2>
+                </div>
+            </div>
         </div>
 
-        <!-- svg elements -->
-
-        <svg width="500" height="500">
-            <line class="first-svg" x1="25" y1="170" x2="35" y2="160" style="stroke:rgb(0,0,0);stroke-width:2"/>
-            <line class="second-svg" x1="40" y1="200" x2="55" y2="200" style="stroke:rgb(0,0,0);stroke-width:2"/>
-            <line class="third-svg"x1="25" y1="230" x2="35" y2="240" style="stroke:rgb(0,0,0);stroke-width:2"/>
-
-            <a href="#first-link"><text class="first-svg" x="40" y="160" font-family="Jura" fill="black" font-size="12">0.1 ABOUT</text></a>
-            <text class="second-svg" x="60" y="203" font-family="Jura" fill="black" font-size="12">0.2 PORTFOLIO</text>
-            <text class="third-svg" x="40" y="245" font-family="Jura" fill="black" font-size="12">0.3 CONTACT</text>
-        </svg> 
-
-       
-        
-        <div class="circle-outer"><div class="tiny-circle"></div><div class="tinier-circle"><div class="block-2"></div></div><div class="circle-inner"></div><div class="block"></div></div>
-
-
-
-    </div>
-
-<div class="container">
-    <div class="menu">
-        <a name="first-link">
-        <div class="first-item">0.1 ABOUT
-        <div class="content"><p class="first-item-info">Computer Science Undergraduate @ Harvard University</p></div>
-</a></div>
-        <div class="second-item">0.2 PORTFOLIO
-        <br> --> </div>
-        <div class="third-item">0.3 CONTACT
-        <div class="content">
-        
-        <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="post">
-        <span class="error">* required field.</span><br><br>
-        Name: <input type="text" name="name">
-         <span class="error">* <?php echo $nameErr;?></span>
-         <br><br>
-        E-mail: <input type="text" name="email">
-         <span class="error">* <?php echo $emailErr;?></span><br><br>
-        Message: <textarea name="message" rows="5" cols="40"></textarea>
-         <span class="error">* <?php echo $messageErr;?></span><br><br>
-        <input type="submit"></form></div></div>
-
-    </div>
-
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-    
-</body>
+    </body>
+ 
 </html>
+
+
+

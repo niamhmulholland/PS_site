@@ -1,82 +1,61 @@
-
-main {
-	height: 100%;
-}
-
-/* main div layout styling */
-
-.full-page-inner {
-	padding-width: 10px;
+main, body {
+	background: white;
 	height: 100%;
 	width: 100%;
-	border: 10px solid #B8E5F5;
-	background-color: white;
-	position: fixed;
-}
- 
-.header, .menu {
-	 margin: 0 auto;
-     max-width: 700px; 
-     padding: 15px;
-}
-
-.container {
-	text-align: center;
-	width: 100%;
-	margin: auto;
-	height: 100%;
-	float: left;
-	position: absolute;
-
-}
-
-.first-item, .second-item, .third-item {
-	padding: 250px;
-}
-.third-item {
-	padding-bottom: 350px;
-	text-align: left;
-}
-
-.second-item {
-	font-size: 20px;
-}
-
-.second-item a:hover{
-	opacity: 0.5;
-}
-
-/* font, colour, size styling */
-.title, .menu { 
-	text-align: center;
-	font-size: 24px;
 	font-family: 'Jura';
-	opacity: 0.4;
 }
 
-.menu {
-	width: 100%;
-	font-size: 18px;
-	opacity: 1.0;
-	font-weight: bold;
-	display: inline-block;	
-}
+/* about box styling */
 
-.container a { 
-	text-decoration: none;
-
-}
-
-.content {
-	color: black;
+.upper-box {
+	position: absolute;
+	display: inline-block;
 	padding: 50px;
-	float: right;
-	top: 100;
+	z-index: 999;
+}
+
+.title {
+	font-size: 20px;
+	color: black;
+	float: left;
+	top: 0;
+	left: 0;
+	text-align: center;
+	margin-left: 10%;
+}
+
+.about {
+	float: left;
+
+}
+
+#myCarousel {
 	position: fixed;
-	background: linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
-        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
-        linear-gradient(-90deg, rgba(0, 0, 0, .03) 1px, transparent 1px),
-        linear-gradient(rgba(0, 0, 0, .03) 1px, transparent 1px),
+	height: 100%;
+	width: 100%;
+
+}
+
+h2 {
+
+	color: black;
+}
+
+/* main content styling */
+
+/*.content {
+	top: 150px;
+	height: 30%;
+	width: 100%;
+	color: white;
+	padding-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	background: linear-gradient(-90deg, rgba(0, 0, 0, .1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, .1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px),
         linear-gradient(transparent 3px, transparent 3px, transparent 78px, transparent 78px),
         linear-gradient(-90deg, transparent 1px, transparent 1px),
         linear-gradient(-90deg, transparent 3px, transparent 3px, transparent 78px, transparent 78px),
@@ -90,110 +69,12 @@ main {
         10px 10px,
         10px 10px,
         10px 10px;
-}
-
-.third-item .content {
-	position: absolute;
-	padding-right: 50px;
-	right: 50px;
-	}
-
-/* circle stying and animation */
-
-.circle-outer {
-	width: 30px;
-	height: 50px;
-	position: absolute;
-	top: 240px; 
-	border-radius: 50%;
-	background-color: black;
-	z-index: 0;
-}
-
-.circle-inner {
-	width: 25px;
-	height: 40px;
-	position: absolute;
-	top: 5px; 
-	z-index: 99;
-	background-color: white;
-	border-radius: 60%;
-}
-
-.tiny-circle {
-	width: 22px;
-	height: 35px;
-	background: black;
-	position: absolute;
-	top: 6.5px;
-	z-index: 1000;
-	border-radius: 70%
-	}
-
-.tinier-circle {
-	width: 18px;
-	height: 31px;
-	background: white;
-	z-index: 1001;
-	position: absolute;
-	top: 8.5px;
-	border-radius: 70%;
-}
-.block {
-	width: 15px;
-	height: 50px;
-	top: -20px;
-	background: white;
-}
-.block-2 {
-	width: 10px;
-	height: 50px;
-	background: white;
-	position: absolute;
-	top: -10px;
-
-} 
+} */
 
 
-/* nav-icon styling */
-.nav-icon {
-	background-color: black;
-	height: 45px;
-	width: 55px;
-	margin: 0;
-	display: block;
-	position: fixed;
-	text-align: center;
-	float: left;
-	z-index: 999;
-}
-.nav-icon h1 {
-	color: white;
-	font-size: 20px;
-	margin-top: 5px;
-	font-family: 'Jura';
-    font-size: 35px;
-}
+/* PARTIALS */
 
-
-
-
-/*
-a:hover {
-	text-decoration: none;
-}
-svg .circle {
-	fill: white;
-	stroke: black;
-	stroke-width: 3;
-	r: 3;
-}
-
-svg .header-text {
-	font-family: 'Jura';
-	font-size: 30px;
-	fill: #337ab7;
-}
+/* nav icon styling */
 
 .nav-icon {
 	background-color: black;
@@ -214,132 +95,21 @@ svg .header-text {
     font-size: 35px;
 }
 
+/* footer styling */
 
-.nav-bar .name {
-	margin-left: 0;
-	float: left;
+.footer {
+	position: fixed;
+	display: block;
+	left: 0;
+	bottom: 0;
+	background-color: grey;
 }
 
-.nav-bar a {
-	font-size: 20px;
-	padding: 40px;
-}
-
-.nav-icon ul {
+.footer,  .footer p { 
+	color: black;
+	opacity: .7;
 	font-family: 'Jura';
-	font-size: 20px;
-	opacity: 0.5;
-}
-.nav-icon ul:hover {
-	font-family: 'Jura';
-	font-size: 20px;
-	opacity: 1;
-}
-
- !!!first section 
-
-.main {
-	padding-top: 0px;
+	height: 20px;
 	width: 100%;
-	position: relative;
-	height: 80vh;
+	text-align: right;
 }
-
- !!!second section 
-
-.container .section-heading {
-	font-family: 'Jura';
-	text-decoration: none;
-	font-size: 60px;
-	color: #337ab7;
-	
-}
-
-.container p, a {
-	
-	color: black;
-	font-family: 'Jura';
-	padding: 5px;
-}
-
-.row {
-	padding: 55px;
-}
-
-
-section {
-	padding-bottom: 0;
-
-}
-
-#about {
-	padding-bottom: 100px;
-
-}
-
-#about a {
-	color: black;
-
-}
-
-#about .redirect {
-	opacity: 0.5;
-}
-
-#about a:hover {
-	opacity: 1;
-	color: black;
-}
-
-
-#contact p {
-	background-color: white;
-	color: black;
-	text-align: center;
-}
-
-#contact a {
-	color: #337ab7;
-	
-} 
-
-footer .text-muted {
-	font-size: 13px;
-	padding: 50px;
-	text-align: center;
-	font-family: 'Jura'
-}
-
-footer hr {
-	 border-width: 3px;
-  	 max-width: 1000px;
-}
-
-!!!projects page 
-
-.sub-page .section-heading {
-	font-size: 130px;
-	float: left;
-	position: absolute;
-	z-index: 999;
-	opacity: 0.3;
-}
-
-.project-block {
-	
-	padding: 5px;
-	color: black;
-	float: center;
-	position: center;
-	width: 30%;
-}
-
-.container {
-	padding: 5px;
-	font-family: 'Jura';
-	font-size: 20px;
-	background-color: #C9D3D6;
-}*/
-
-
-
