@@ -3,13 +3,19 @@
 <head>
     
     <% include ../partials/style-links %>
+    <% include scripts %>
 
 </head>
 
+<body ng-app="myApp">
     <main>
        <% include ../partials/nav-icon %>
-       <% include ../partials/main %>
-       <% include ../partials/footer %>   
-    </main>
-
+       <div ng-view></div>
+       <% include ../partials/main-menu %>
+       <!--<%include ../partials/about%> 
+       <% include ../partials/main-menu %>
+       <% include ../partials/main %> -->
+       <% include ../partials/footer %>  
+    </main> 
+</body> 
 </html>
