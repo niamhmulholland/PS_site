@@ -18,14 +18,14 @@ app.get('/', function(req, res) {
     res.render('pages/index');
 });
 
-// résumé page 
-app.get('/resume', function(req, res) {
-    res.render('pages/resume');
+// about page 
+app.get('/about', function(req, res) {
+    res.render('pages/about');
 });
 
-// projects page 
-app.get('/projects', function(req, res) {
-    res.render('pages/projects');
+// about page 
+app.get('/about2', function(req, res) {
+    res.render('pages/about2');
 });
 
 app.listen(port, function() {
