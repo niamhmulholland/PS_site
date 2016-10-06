@@ -1,0 +1,26 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+<script>
+var routerApp = angular.module('routerApp', ['ui.router']);
+
+routerApp.config(function($stateProvider, $urlRouterProvider) {
+    
+    $urlRouterProvider.otherwise('/home');
+    
+    $stateProvider
+        
+        // HOME STATES AND NESTED VIEWS ========================================
+        .state('home', {
+            url: '/home',
+            templateUrl: 'main-menu.html'
+        })
+        
+        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
+        .state('about', {
+             
+        });
+        
+});
+</script>
