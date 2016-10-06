@@ -23,7 +23,7 @@ main, body {
 	left: 0;
 	text-align: center;
 	margin-left: 42%;
-	margin-top: 20%;
+	margin-top: 15%;
 	
 }
 
@@ -35,12 +35,12 @@ main, body {
 	left: 0;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 
 .menu {
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 15%;
 
 }
 .items {
@@ -121,6 +121,37 @@ h2 {
     font-size: 35px;
 }
 
+/* about page styling */
+.holder {
+	margin-left: 30%;
+	margin-top: 20%;
+
+}
+
+.first, .second, .middle {
+	float: left;
+}
+
+.first {
+	font-size: 20px;
+}
+
+.second { 
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.middle {
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.info { 
+
+	position: absolute;
+	padding: 60px;
+	text-align: center;
+}
 /* footer styling */
 
 .footer {

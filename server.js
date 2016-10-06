@@ -24,8 +24,8 @@ app.get('/about', function(req, res) {
 });
 
 // about page 
-app.get('/about2', function(req, res) {
-    res.render('pages/about2');
+app.get('/construction', function(req, res) {
+    res.render('pages/construction');
 });
 
 app.listen(port, function() {
