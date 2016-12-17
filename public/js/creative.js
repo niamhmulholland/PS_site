@@ -1,9 +1,3 @@
-/*!
- * Creative v1.0.4 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
 (function($) {
     "use strict"; // Start of use strict
 
@@ -20,20 +14,12 @@
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
-    })
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
-        $('.navbar-toggle:visible').click();
     });
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
 
     // Offset for Main Navigation
     $('#mainNav').affix({
